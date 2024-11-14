@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		68A5A96B2CE68B11009DD663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68A5A94D2CE68B10009DD663 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68A5A9542CE68B10009DD663;
+			remoteInfo = "BM-Digital-Transformation";
+		};
+		68A5A9752CE68B11009DD663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68A5A94D2CE68B10009DD663 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68A5A9542CE68B10009DD663;
+			remoteInfo = "BM-Digital-Transformation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68A5A9552CE68B10009DD663 /* BM-Digital-Transformation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BM-Digital-Transformation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A5A96A2CE68B11009DD663 /* BM-Digital-TransformationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BM-Digital-TransformationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A5A9742CE68B11009DD663 /* BM-Digital-TransformationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BM-Digital-TransformationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		68A5A9572CE68B10009DD663 /* BM-Digital-Transformation */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "BM-Digital-Transformation";
+			sourceTree = "<group>";
+		};
+		68A5A96D2CE68B11009DD663 /* BM-Digital-TransformationTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "BM-Digital-TransformationTests";
+			sourceTree = "<group>";
+		};
+		68A5A9772CE68B11009DD663 /* BM-Digital-TransformationUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "BM-Digital-TransformationUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68A5A9522CE68B10009DD663 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68A5A9672CE68B11009DD663 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68A5A9712CE68B11009DD663 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68A5A94C2CE68B10009DD663 = {
+			isa = PBXGroup;
+			children = (
+				68A5A9572CE68B10009DD663 /* BM-Digital-Transformation */,
+				68A5A96D2CE68B11009DD663 /* BM-Digital-TransformationTests */,
+				68A5A9772CE68B11009DD663 /* BM-Digital-TransformationUITests */,
+				68A5A9562CE68B10009DD663 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68A5A9562CE68B10009DD663 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68A5A9552CE68B10009DD663 /* BM-Digital-Transformation.app */,
+				68A5A96A2CE68B11009DD663 /* BM-Digital-TransformationTests.xctest */,
+				68A5A9742CE68B11009DD663 /* BM-Digital-TransformationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68A5A9542CE68B10009DD663 /* BM-Digital-Transformation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68A5A97E2CE68B11009DD663 /* Build configuration list for PBXNativeTarget "BM-Digital-Transformation" */;
+			buildPhases = (
+				68A5A9512CE68B10009DD663 /* Sources */,
+				68A5A9522CE68B10009DD663 /* Frameworks */,
+				68A5A9532CE68B10009DD663 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				68A5A9572CE68B10009DD663 /* BM-Digital-Transformation */,
+			);
+			name = "BM-Digital-Transformation";
+			packageProductDependencies = (
+			);
+			productName = "BM-Digital-Transformation";
+			productReference = 68A5A9552CE68B10009DD663 /* BM-Digital-Transformation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68A5A9692CE68B11009DD663 /* BM-Digital-TransformationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68A5A9812CE68B11009DD663 /* Build configuration list for PBXNativeTarget "BM-Digital-TransformationTests" */;
+			buildPhases = (
+				68A5A9662CE68B11009DD663 /* Sources */,
+				68A5A9672CE68B11009DD663 /* Frameworks */,
+				68A5A9682CE68B11009DD663 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68A5A96C2CE68B11009DD663 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				68A5A96D2CE68B11009DD663 /* BM-Digital-TransformationTests */,
+			);
+			name = "BM-Digital-TransformationTests";
+			packageProductDependencies = (
+			);
+			productName = "BM-Digital-TransformationTests";
+			productReference = 68A5A96A2CE68B11009DD663 /* BM-Digital-TransformationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		68A5A9732CE68B11009DD663 /* BM-Digital-TransformationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68A5A9842CE68B11009DD663 /* Build configuration list for PBXNativeTarget "BM-Digital-TransformationUITests" */;
+			buildPhases = (
+				68A5A9702CE68B11009DD663 /* Sources */,
+				68A5A9712CE68B11009DD663 /* Frameworks */,
+				68A5A9722CE68B11009DD663 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68A5A9762CE68B11009DD663 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				68A5A9772CE68B11009DD663 /* BM-Digital-TransformationUITests */,
+			);
+			name = "BM-Digital-TransformationUITests";
+			packageProductDependencies = (
+			);
+			productName = "BM-Digital-TransformationUITests";
+			productReference = 68A5A9742CE68B11009DD663 /* BM-Digital-TransformationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68A5A94D2CE68B10009DD663 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					68A5A9542CE68B10009DD663 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					68A5A9692CE68B11009DD663 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 68A5A9542CE68B10009DD663;
+					};
+					68A5A9732CE68B11009DD663 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 68A5A9542CE68B10009DD663;
+					};
+				};
+			};
+			buildConfigurationList = 68A5A9502CE68B10009DD663 /* Build configuration list for PBXProject "BM-Digital-Transformation" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68A5A94C2CE68B10009DD663;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 68A5A9562CE68B10009DD663 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68A5A9542CE68B10009DD663 /* BM-Digital-Transformation */,
+				68A5A9692CE68B11009DD663 /* BM-Digital-TransformationTests */,
+				68A5A9732CE68B11009DD663 /* BM-Digital-TransformationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68A5A9532CE68B10009DD663 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68A5A9682CE68B11009DD663 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68A5A9722CE68B11009DD663 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68A5A9512CE68B10009DD663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68A5A9662CE68B11009DD663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68A5A9702CE68B11009DD663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68A5A96C2CE68B11009DD663 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68A5A9542CE68B10009DD663 /* BM-Digital-Transformation */;
+			targetProxy = 68A5A96B2CE68B11009DD663 /* PBXContainerItemProxy */;
+		};
+		68A5A9762CE68B11009DD663 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68A5A9542CE68B10009DD663 /* BM-Digital-Transformation */;
+			targetProxy = 68A5A9752CE68B11009DD663 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		68A5A97C2CE68B11009DD663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68A5A97D2CE68B11009DD663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68A5A97F2CE68B11009DD663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BM-Digital-Transformation/Preview Content\"";
+				DEVELOPMENT_TEAM = 588WM3CY3D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.land-marks.BM-Digital-Transformation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68A5A9802CE68B11009DD663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BM-Digital-Transformation/Preview Content\"";
+				DEVELOPMENT_TEAM = 588WM3CY3D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.land-marks.BM-Digital-Transformation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68A5A9822CE68B11009DD663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 588WM3CY3D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.land-marks.BM-Digital-TransformationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BM-Digital-Transformation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BM-Digital-Transformation";
+			};
+			name = Debug;
+		};
+		68A5A9832CE68B11009DD663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 588WM3CY3D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.land-marks.BM-Digital-TransformationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BM-Digital-Transformation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BM-Digital-Transformation";
+			};
+			name = Release;
+		};
+		68A5A9852CE68B11009DD663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 588WM3CY3D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.land-marks.BM-Digital-TransformationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BM-Digital-Transformation";
+			};
+			name = Debug;
+		};
+		68A5A9862CE68B11009DD663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 588WM3CY3D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.land-marks.BM-Digital-TransformationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BM-Digital-Transformation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68A5A9502CE68B10009DD663 /* Build configuration list for PBXProject "BM-Digital-Transformation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68A5A97C2CE68B11009DD663 /* Debug */,
+				68A5A97D2CE68B11009DD663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68A5A97E2CE68B11009DD663 /* Build configuration list for PBXNativeTarget "BM-Digital-Transformation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68A5A97F2CE68B11009DD663 /* Debug */,
+				68A5A9802CE68B11009DD663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68A5A9812CE68B11009DD663 /* Build configuration list for PBXNativeTarget "BM-Digital-TransformationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68A5A9822CE68B11009DD663 /* Debug */,
+				68A5A9832CE68B11009DD663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68A5A9842CE68B11009DD663 /* Build configuration list for PBXNativeTarget "BM-Digital-TransformationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68A5A9852CE68B11009DD663 /* Debug */,
+				68A5A9862CE68B11009DD663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68A5A94D2CE68B10009DD663 /* Project object */;
+}
