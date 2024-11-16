@@ -7,6 +7,7 @@
 
 protocol MoviesRepositoryProtocol {
   func startfetchingMovies(with moviesType: MoviesType) async throws -> MoviesResponse
+  func startFetchingMovieDetails(with movieId: Int) async throws -> MovieDetailsResponse
 }
 
 struct MoviesRepository: MoviesRepositoryProtocol {
@@ -27,5 +28,13 @@ struct MoviesRepository: MoviesRepositoryProtocol {
     let moviesResponse: MoviesResponse = try await apiclient.startRequest(with: request)
     
     return moviesResponse
+  }
+  
+  func startFetchingMovieDetails(with movieId: Int) async throws -> MovieDetailsResponse {
+    let request = MoviesRequest.details(movieID: movieId)
+    
+    let movieDetailsResponse: MovieDetailsResponse = try await apiclient.startRequest(with: request)
+    
+    return movieDetailsResponse
   }
 }

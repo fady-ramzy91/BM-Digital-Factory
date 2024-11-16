@@ -17,11 +17,12 @@ enum MoviesRequest: APIRequest {
   case list(page: Int,
             language: String,
             moviesType: MoviesType)
+  case details(movieID: Int)
   
   var method: HTTPMethod {
     switch self {
-    case .list:
-      .get
+    case .list, .details:
+        .get
     }
   }
   
@@ -29,6 +30,8 @@ enum MoviesRequest: APIRequest {
     switch self {
     case let .list(_, _, moviesType):
       "movie/\(moviesType.rawValue)"
+    case let .details(movieID):
+      "movie/\(movieID)"
     }
   }
   
@@ -38,6 +41,8 @@ enum MoviesRequest: APIRequest {
                    language, _):
       ["page": String(page),
        "language": language]
+    case .details:
+      nil
     }
   }
 }
