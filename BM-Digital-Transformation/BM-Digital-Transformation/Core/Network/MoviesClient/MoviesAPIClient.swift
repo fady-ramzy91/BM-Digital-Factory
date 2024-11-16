@@ -5,4 +5,7 @@
 //  Created by Fady Ramzy on 14/11/2024.
 //
 
-struct MoviesAPIClient: APIClient {}
+struct MoviesAPIClient: APIClient {
+  // MARK: - Properties
+  var baseURL: String { "https://api.themoviedb.org/3/" }
+}

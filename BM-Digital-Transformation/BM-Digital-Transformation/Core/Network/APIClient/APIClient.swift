@@ -12,13 +12,17 @@ enum APIError: Error {
 }
 
 protocol APIClient {
+  // MARK: - Properties
+  var baseURL: String { get }
+  
+  // MARK: - Methods
   func startRequest<T>(with request: APIRequest) async throws -> T where T: Codable
   func urlRequest(from apiRequest: APIRequest) async throws -> URLRequest
 }
 
 extension APIClient {
   func urlRequest(from apiRequest: APIRequest) async throws -> URLRequest {
-    guard let url = URL(string: apiRequest.path) else {
+    guard let url = URL(string: baseURL + apiRequest.path) else {
       throw APIError.invalidURL
     }
     

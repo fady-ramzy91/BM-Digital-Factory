@@ -20,3 +20,12 @@ protocol APIRequest {
   var parameters: [String: String]? { get }
   var headers: [String: String]? { get }
 }
+
+extension APIRequest {
+  var headers: [String : String]? {
+    [
+      "accept": "application/json",
+      "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzMDVhNTY3MmY0NzQ1YzE2OGE1NThjZjVlMWU4YWUyZCIsIm5iZiI6MTczMTYxMDExOC40MTE4NTMzLCJzdWIiOiI2NzM2NDM3MjI5NTRkMjY0NzYyNTk2Y2IiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.Td2Ib6X_ihQ-vKHaV3jZOoPFj4aVztEMywVopI9RHvo"
+    ]
+  }
+}
