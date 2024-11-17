@@ -35,17 +35,28 @@ struct MovieDetailsContentView: View {
         Text(movieDetailsViewModel.movieDetailsUIModel?.title ?? "")
           .font(.title)
           .bold()
-          .padding(.leading, 16.0)
+          .padding([.leading, .trailing], 16.0)
+        
         Text(movieDetailsViewModel.movieDetailsUIModel?.releaseDate ?? "")
           .font(.title2)
-          .padding(.leading, 16.0)
+          .padding([.leading, .trailing], 16.0)
         
+        VStack(alignment: .leading) {
+          Text("Genres")
+            .font(.title2)
+            .bold().padding([.leading, .trailing], 16.0)
+          ForEach(movieDetailsViewModel.movieDetailsUIModel?.genres ?? []) { genre in
+            Text(genre.name)
+              .font(.title2)
+              .padding([.leading, .trailing], 16.0)
+          }
+        }
         Text(movieDetailsViewModel.movieDetailsUIModel?.runtime ?? "")
           .font(.title2)
-          .padding(.leading, 16.0)
+          .padding([.leading, .trailing], 16.0)
         Text(movieDetailsViewModel.movieDetailsUIModel?.overview ?? "")
           .font(.title3)
-          .padding(.leading, 16.0)
+          .padding([.leading, .trailing], 16.0)
       }
     }.onAppear {
       Task {

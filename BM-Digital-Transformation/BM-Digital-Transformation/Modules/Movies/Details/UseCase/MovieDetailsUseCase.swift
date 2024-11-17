@@ -13,8 +13,13 @@ struct MovieDetailsUIModel: Identifiable {
   let releaseDate: String
   let imgaeURL: URL
   let overview: String
-  let genres: [String]
+  let genres: [GenreUIModel]
   let runtime: String
+}
+
+struct GenreUIModel: Identifiable {
+  let id: Int
+  let name: String
 }
 
 protocol MovieDetailsUseCaseProtocol {
@@ -54,7 +59,8 @@ struct MovieDetailsUseCase: MovieDetailsUseCaseProtocol {
                         releaseDate: movieDetailsResponse.releaseDate,
                         imgaeURL: URL(string: "https://image.tmdb.org/t/p/w500" + movieDetailsResponse.posterPath)!,
                         overview: movieDetailsResponse.overview,
-                        genres: movieDetailsResponse.genres.map({ $0.name }),
+                        genres: movieDetailsResponse.genres.map({ GenreUIModel(id: $0.id,
+                                                                               name: $0.name) }),
                         runtime: convertNumberToTime(seconds: movieDetailsResponse.runtime))
   }
 }
