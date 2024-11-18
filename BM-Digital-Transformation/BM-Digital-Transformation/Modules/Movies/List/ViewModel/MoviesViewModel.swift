@@ -6,12 +6,15 @@
 //
 
 import Foundation
+import SwiftUICore
 
+@MainActor
 @Observable
 final class MoviesViewModel {
   // MARK: - Properties
+  var showErrorMessagePopup: Bool = false
+  var movies: [MovieUIModel] = []  
   private let useCase: MoviesUseCaseProtocol
-  var movies: [MovieUIModel] = []
   
   // MARK: - Init Methods
   init(useCase: MoviesUseCaseProtocol) {
@@ -19,6 +22,10 @@ final class MoviesViewModel {
   }
   
   func startFetchingMovies(with moviesType: MoviesType) async throws {
-    movies = try await useCase.startFetchingMovies(with: moviesType)
+    do {
+      movies = try await useCase.startFetchingMovies(with: moviesType)
+    } catch {
+      showErrorMessagePopup = true
+    }
   }
 }

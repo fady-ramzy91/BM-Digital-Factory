@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct BM_Digital_TransformationApp: App {
+  
     var body: some Scene {
-        WindowGroup {
-          MoviesContentView(viewModel: MoviesConfigurator().viewModel)
-        }
+      WindowGroup {
+        MoviesContentView(viewModel: MoviesConfigurator().viewModel)
+      }
     }
 }

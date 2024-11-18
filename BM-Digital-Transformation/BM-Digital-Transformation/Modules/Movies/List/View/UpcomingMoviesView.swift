@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct UpcomingMoviesView: View {
-  private let viewModel: MoviesViewModel
+  @State private var viewModel: MoviesViewModel
   
   init(viewModel: MoviesViewModel) {
     self.viewModel = viewModel
@@ -30,7 +30,19 @@ struct UpcomingMoviesView: View {
       Task {
         try await viewModel.startFetchingMovies(with: .upcoming)
       }
-    }
+    }.alert("Error",
+            isPresented: $viewModel.showErrorMessagePopup) {
+       Button("Retry") {
+         Task {
+           try await viewModel.startFetchingMovies(with: .upcoming)
+           viewModel.showErrorMessagePopup = false
+         }
+       }
+       
+       Button("Cancel", role: .cancel) {
+         viewModel.showErrorMessagePopup = false
+       }
+     }
   }
 }
 

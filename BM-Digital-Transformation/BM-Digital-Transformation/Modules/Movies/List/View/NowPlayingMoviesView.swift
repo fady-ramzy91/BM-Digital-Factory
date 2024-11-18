@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NowPlayingMoviesView: View {
   // MARK: - Dependencies
-  private let viewModel: MoviesViewModel
+  @State private var viewModel: MoviesViewModel
   
   // MARK: - Init Methods
   init(viewModel: MoviesViewModel) {
@@ -31,6 +31,19 @@ struct NowPlayingMoviesView: View {
     }.onAppear() {
       Task {
         try await viewModel.startFetchingMovies(with: .nowPlaying)
+      }
+    }
+    .alert("Error",
+           isPresented: $viewModel.showErrorMessagePopup) {
+      Button("Retry") {
+        Task {
+          try await viewModel.startFetchingMovies(with: .nowPlaying)
+          viewModel.showErrorMessagePopup = false
+        }
+      }
+      
+      Button("Cancel", role: .cancel) {
+        viewModel.showErrorMessagePopup = false
       }
     }
   }

@@ -7,8 +7,21 @@
 
 import Foundation
 
-enum APIError: Error {
-  case invalidURL
+enum APIError: Error, LocalizedError {
+  case inValidURL
+  case noInternetConnection
+  case serverError
+  
+  var errorDescription: String? {
+    switch self {
+    case .inValidURL:
+      "Invalid URL"
+    case .noInternetConnection:
+      "No internet connection"
+    case .serverError:
+      "Server error"
+    }
+  }
 }
 
 protocol APIClient {
@@ -18,12 +31,13 @@ protocol APIClient {
   // MARK: - Methods
   func startRequest<T>(with request: APIRequest) async throws -> T where T: Codable
   func urlRequest(from apiRequest: APIRequest) async throws -> URLRequest
+  func handleReturnedError(with error: URLError) -> APIError
 }
 
 extension APIClient {
   func urlRequest(from apiRequest: APIRequest) async throws -> URLRequest {
     guard let url = URL(string: baseURL + apiRequest.path) else {
-      throw APIError.invalidURL
+      throw APIError.inValidURL
     }
     
     var components = URLComponents(url: url, resolvingAgainstBaseURL: true)!
@@ -38,11 +52,16 @@ extension APIClient {
   
   func startRequest<T>(with request: APIRequest) async throws -> T where T: Codable {
     let request = try await urlRequest(from: request)
-    let (data, _) = try await URLSession.shared.data(for: request)
-    let decoder = JSONDecoder()
-    decoder.keyDecodingStrategy = .convertFromSnakeCase
-    let fetchedData = try decoder.decode(T.self, from: data)
     
-    return fetchedData
+    do {
+      let (data, _) = try await URLSession.shared.data(for: request)
+      let decoder = JSONDecoder()
+      decoder.keyDecodingStrategy = .convertFromSnakeCase
+      let fetchedData = try decoder.decode(T.self, from: data)
+      
+      return fetchedData
+    } catch let error as URLError {
+      throw handleReturnedError(with: error)
+    }
   }
 }

@@ -20,7 +20,7 @@ struct MoviesContentView: View {
         .tabItem {
           Label("Now Playing",
                 systemImage: "list.dash")
-      }
+        }
       
       UpcomingMoviesView(viewModel: viewModel)
         .tabItem {

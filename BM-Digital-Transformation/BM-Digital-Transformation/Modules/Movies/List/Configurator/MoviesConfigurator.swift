@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 struct MoviesConfigurator {
   var viewModel: MoviesViewModel {
     let apiClient = MoviesAPIClient()

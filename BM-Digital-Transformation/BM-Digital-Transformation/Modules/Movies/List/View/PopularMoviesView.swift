@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PopularMoviesView: View {
-  private let viewModel: MoviesViewModel
+  @State private var viewModel: MoviesViewModel
   
   init(viewModel: MoviesViewModel) {
     self.viewModel = viewModel
@@ -28,6 +28,19 @@ struct PopularMoviesView: View {
     }.onAppear() {
       Task {
         try await viewModel.startFetchingMovies(with: .popular)
+      }
+    }
+    .alert("Error",
+           isPresented: $viewModel.showErrorMessagePopup) {
+      Button("Retry") {
+        Task {
+          try await viewModel.startFetchingMovies(with: .popular)
+          viewModel.showErrorMessagePopup = false
+        }
+      }
+      
+      Button("Cancel", role: .cancel) {
+        viewModel.showErrorMessagePopup = false
       }
     }
   }
